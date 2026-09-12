@@ -1,0 +1,7 @@
+# Gleam artifacts
+/target/
+build/
+*.lock
+erl_crash.dump
+
+local/
