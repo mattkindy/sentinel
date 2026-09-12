@@ -19,9 +19,6 @@ jobs:
           install: true
           cache: true
 
-      - name: Install mix_gleam archive
-        run: mix archive.install hex mix_gleam --force
-
       - name: Cache deps and build
         uses: actions/cache@v4
         with:

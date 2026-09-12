@@ -38,6 +38,8 @@ defmodule Sentinel.MixProject do
   # Run "mix help deps" for examples and options.
   defp deps do
     [
+      # Task provider for engine's :gleam compiler; also in engine's deps. Keep in sync
+      {:mix_gleam, "~> 0.6", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]

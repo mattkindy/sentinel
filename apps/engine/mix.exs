@@ -14,14 +14,12 @@ defmodule Engine.MixProject do
       elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      archives: [mix_gleam: "~> 0.6"],
       compilers: [:gleam | Mix.compilers()],
       aliases: [
-        # Or add this to your aliases function
         "deps.get": ["deps.get", "gleam.deps.get"]
       ],
       erlc_paths: [
-        "build/dev/erlang/#{@app}/_gleam_artefacts",
+        "build/dev/erlang/#{@app}/_gleam_artefacts"
       ],
       erlc_include_path: "build/dev/erlang/#{@app}/include",
       # For Elixir >= v1.15.0
@@ -43,6 +41,7 @@ defmodule Engine.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
       # {:sibling_app_in_umbrella, in_umbrella: true},
       {:gleam_stdlib, "~> 0.34 or ~> 1.0"},
+      {:mix_gleam, "~> 0.6", only: [:dev, :test], runtime: false},
       {:gleeunit, "~> 1.0", only: [:dev, :test], runtime: false},
       {:compute, in_umbrella: true}
     ]

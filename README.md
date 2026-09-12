@@ -47,36 +47,4 @@ are compiled by the Gleam compiler and executed through an ExUnit bridge
 module. When you add a new Gleam test module, add a corresponding line to the
 bridge. This requires `:eunit` in engine's `extra_applications`.
 
-**Do not run `mix gleam.test`.** It assumes every umbrella app is a Gleam
-project: it crashes when it reaches `compute`, and its failed run corrupts
-dependency state, after which builds fail with
-`The task "compile.gleam" could not be found`.
-
-### Troubleshooting: `compile.gleam could not be found`
-
-This error almost never means the mix_gleam archive is missing — check
-`mix archive` first (it should list `mix_gleam`). It means a Mix invocation
-ran in a context where the archive doesn't load. Causes, in order of
-likelihood:
-
-1. Stale generated files in the Gleam deps (common after a failed
-   `mix gleam.test`). Fix:gi
-
-```sh
-   mix deps.clean gleam_stdlib gleeunit
-   mix deps.get
-```
-
-2. A `MIX_HOME` or `MIX_ARCHIVES` override pointing at the wrong location.
-   Archives live inside the mise-managed Elixir install
-   (`~/.local/share/mise/installs/elixir/<version>/.mix/archives`), not
-   `~/.mix`. Fix: `unset MIX_HOME MIX_ARCHIVES` and remove any such exports
-   from your shell profile.
-
-3. The archive is genuinely missing (fresh machine, or after changing the
-   Elixir version in `mise.toml` — archives are installed per Elixir
-   version). Fix:
-
-```sh
-   mix archive.install hex mix_gleam --force
-```
+**Do not run `mix gleam.test`.** It assumes every umbrella app is a Gleam project and crashes when it reaches `compute`. Use `mix test`.

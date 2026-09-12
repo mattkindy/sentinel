@@ -9,17 +9,21 @@ defmodule Compute.Indicators do
   @doc """
   Simple moving average over `series` with the given `window`.
 
-  Returns `{:ok, averages}` where the result has
-  `length(series) - window + 1` elements, or `{:error, reason}`
-  for invalid input.
+  Returns `{:ok, averages}` when `window` is a positive integer no larger
+  than the series length; the result has `length(series) - window + 1`
+  elements. Returns `{:error, "invalid input"}` for any other window or
+  a series shorter than the window.
 
   ## Examples
 
       iex> Compute.Indicators.sma([1.0, 2.0, 3.0, 4.0], 2)
       {:ok, [1.5, 2.5, 3.5]}
 
+      iex> Compute.Indicators.sma([1.0], 0)
+      {:error, "invalid input"}
+
   """
-  @spec sma([float()], pos_integer()) :: {:ok, [float()]} | {:error, String.t()}
+  @spec sma([number()], integer()) :: {:ok, [float()]} | {:error, String.t()}
   def sma(series, window)
       when is_list(series) and is_integer(window) and window > 0 and length(series) >= window do
     result =
