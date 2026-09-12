@@ -21,10 +21,15 @@ defmodule Sentinel.MixProject do
     if System.find_executable("gleam") do
       Mix.Task.run("deps.compile", ["gleam_compiler"])
 
-      ebin = Mix.Project.build_path() |> Path.join("lib/gleam_compiler/ebin")   # ← these
+      # ← these
+      ebin = Mix.Project.build_path() |> Path.join("lib/gleam_compiler/ebin")
 
-      case System.cmd("elixir", ["-pa", ebin, "-S", "mix", "gleam.deps.get"],   # ← lines
-             cd: "apps/engine", into: IO.stream(), stderr_to_stdout: true) do
+      # ← lines
+      case System.cmd("elixir", ["-pa", ebin, "-S", "mix", "gleam.deps.get"],
+             cd: "apps/engine",
+             into: IO.stream(),
+             stderr_to_stdout: true
+           ) do
         {_out, 0} -> :ok
         {_out, status} -> Mix.raise("gleam.deps.get failed (exit #{status})")
       end
