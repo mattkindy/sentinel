@@ -1,3 +1,11 @@
+# Mix
+/_build/
+/deps/
+/cover/
+erl_crash.dump
+*.beam
+*.ez
+
 # Gleam artifacts
 /target/
 build/
