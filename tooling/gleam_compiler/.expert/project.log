@@ -1,0 +1,260 @@
+
+15:23:02.030 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.076 ms
+
+15:23:04.348 instance_id=1A096ECAD8B [info] Building gleam_compiler
+
+15:23:05.500 instance_id=1A096ECAD8B [info] Compile completed with status ok Produced 0 diagnostics []
+
+15:23:05.521 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.045 ms
+
+15:23:05.785 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.066 ms
+
+15:30:33.295 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Kernel, :defmodule, 2}
+
+15:31:26.344 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Mix.Tasks.Compile.Gleam, :compile_package, 1}
+
+15:31:46.411 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:31:48.999 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:31:55.604 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Kernel, :unless, 2}
+
+15:32:06.638 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :package}
+
+15:32:06.657 instance_id=1A096ECAD8B [info] Resolved entity: {:module, File}
+
+15:32:06.658 instance_id=1A096ECAD8B [info] No definition found for {:module, File} with Indexer.
+
+15:32:07.524 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.016 ms
+
+15:32:08.451 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Kernel, :defmodule, 2}
+
+15:32:08.618 instance_id=1A096ECAD8B [info] Building gleam_compiler
+
+15:32:08.788 instance_id=1A096ECAD8B [info] Compile completed with status ok Produced 0 diagnostics []
+
+15:32:08.789 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.017 ms
+
+15:32:08.950 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.014 ms
+
+15:32:31.285 instance_id=1A096ECAD8B [info] Resolved entity: {:module, File}
+
+15:32:31.286 instance_id=1A096ECAD8B [info] No definition found for {:module, File} with Indexer.
+
+15:32:31.287 instance_id=1A096ECAD8B [info] Resolved entity: {:call, File, :rm_rf!, 1}
+
+15:32:31.287 instance_id=1A096ECAD8B [info] No definition found for {:call, File, :rm_rf!, 1} with Indexer.
+
+15:32:31.290 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Mix.Project, :build_path, 0}
+
+15:32:31.290 instance_id=1A096ECAD8B [info] No definition found for {:call, Mix.Project, :build_path, 0} with Indexer.
+
+15:32:31.292 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Mix}
+
+15:32:31.292 instance_id=1A096ECAD8B [info] No definition found for {:module, Mix} with Indexer.
+
+15:32:31.301 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Path}
+
+15:32:31.301 instance_id=1A096ECAD8B [info] No definition found for {:module, Path} with Indexer.
+
+15:32:31.303 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Path, :join, 2}
+
+15:32:31.303 instance_id=1A096ECAD8B [info] No definition found for {:call, Path, :join, 2} with Indexer.
+
+15:32:31.312 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Mix}
+
+15:32:31.312 instance_id=1A096ECAD8B [info] No definition found for {:module, Mix} with Indexer.
+
+15:32:31.376 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Path}
+
+15:32:31.376 instance_id=1A096ECAD8B [info] No definition found for {:module, Path} with Indexer.
+
+15:32:31.401 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Path, :absname, 1}
+
+15:32:31.402 instance_id=1A096ECAD8B [info] No definition found for {:call, Path, :absname, 1} with Indexer.
+
+15:32:31.440 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Kernel, :defmodule, 2}
+
+15:32:31.440 instance_id=1A096ECAD8B [info] No definition found for {:call, Kernel, :defmodule, 2} with Indexer.
+
+15:32:31.446 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :out}
+
+15:32:31.446 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Kernel, :def, 2}
+
+15:32:31.447 instance_id=1A096ECAD8B [info] No definition found for {:call, Kernel, :def, 2} with Indexer.
+
+15:32:31.448 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :app}
+
+15:32:31.449 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :tests?}
+
+15:32:31.449 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Mix.Tasks.Compile.Gleam, :compile_package, 2}
+
+15:32:31.670 instance_id=1A096ECAD8B [info] Resolved entity: {:call, File, :regular?, 1}
+
+15:32:31.670 instance_id=1A096ECAD8B [info] No definition found for {:call, File, :regular?, 1} with Indexer.
+
+15:32:31.670 instance_id=1A096ECAD8B [info] Resolved entity: {:module, File}
+
+15:32:31.670 instance_id=1A096ECAD8B [info] No definition found for {:module, File} with Indexer.
+
+15:32:31.673 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Path, :join, 2}
+
+15:32:31.673 instance_id=1A096ECAD8B [info] No definition found for {:call, Path, :join, 2} with Indexer.
+
+15:32:31.675 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Path}
+
+15:32:31.676 instance_id=1A096ECAD8B [info] No definition found for {:module, Path} with Indexer.
+
+15:32:31.687 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Kernel, :unless, 2}
+
+15:32:31.688 instance_id=1A096ECAD8B [info] No definition found for {:call, Kernel, :unless, 2} with Indexer.
+
+15:32:31.752 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :package}
+
+15:32:31.776 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :config}
+
+15:32:31.777 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :build}
+
+15:32:32.656 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.006 ms
+
+15:32:35.598 instance_id=1A096ECAD8B [info] Building gleam_compiler
+
+15:32:35.762 instance_id=1A096ECAD8B [info] Compile completed with status ok Produced 0 diagnostics []
+
+15:32:35.762 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.004 ms
+
+15:32:35.810 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.006 ms
+
+15:32:46.526 instance_id=1A096ECAD8B [info] Resolved entity: {:module_attribute, Mix.Tasks.Compile.Gleam, :shell}
+
+15:32:46.527 instance_id=1A096ECAD8B [info] Resolved entity: {:module, MixGleam}
+
+15:32:46.527 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Kernel, :if, 2}
+
+15:32:46.527 instance_id=1A096ECAD8B [info] No definition found for {:call, Kernel, :if, 2} with Indexer.
+
+15:32:46.528 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :build}
+
+15:32:46.531 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Kernel, :raise, 2}
+
+15:32:46.531 instance_id=1A096ECAD8B [info] No definition found for {:call, Kernel, :raise, 2} with Indexer.
+
+15:32:48.262 instance_id=1A096ECAD8B [info] Building gleam_compiler
+
+15:32:48.433 instance_id=1A096ECAD8B [info] Compile completed with status ok Produced 0 diagnostics []
+
+15:32:48.433 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.01 ms
+
+15:32:48.559 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.017 ms
+
+15:33:04.982 instance_id=1A096ECAD8B [info] Resolved entity: {:call, File, :rm_rf!, 1}
+
+15:33:04.982 instance_id=1A096ECAD8B [info] No definition found for {:call, File, :rm_rf!, 1} with Indexer.
+
+15:33:04.983 instance_id=1A096ECAD8B [info] Resolved entity: {:module, File}
+
+15:33:04.983 instance_id=1A096ECAD8B [info] No definition found for {:module, File} with Indexer.
+
+15:33:04.991 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :out}
+
+15:33:07.337 instance_id=1A096ECAD8B [info] Building gleam_compiler
+
+15:33:07.648 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.007 ms
+
+15:33:07.661 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.006 ms
+
+15:33:09.324 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:33:10.340 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Path}
+
+15:33:10.341 instance_id=1A096ECAD8B [info] No definition found for {:module, Path} with Indexer.
+
+15:33:11.019 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Path, :join, 2}
+
+15:33:11.020 instance_id=1A096ECAD8B [info] No definition found for {:call, Path, :join, 2} with Indexer.
+
+15:33:14.063 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Mix}
+
+15:33:14.064 instance_id=1A096ECAD8B [info] No definition found for {:module, Mix} with Indexer.
+
+15:33:14.927 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.026 ms
+
+15:33:18.787 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:33:18.800 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:33:23.262 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:33:23.896 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:33:27.560 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:33:28.746 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix}
+
+15:33:29.069 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_}
+
+15:33:29.710 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_li}
+
+15:33:30.628 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_liv}
+
+15:33:30.814 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_liv}
+
+15:33:31.266 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_lib}
+
+15:33:31.916 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.01 ms
+
+15:33:32.076 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_lib}
+
+15:33:32.316 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Path}
+
+15:33:32.317 instance_id=1A096ECAD8B [info] No definition found for {:module, Path} with Indexer.
+
+15:33:32.353 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Path}
+
+15:33:32.353 instance_id=1A096ECAD8B [info] No definition found for {:module, Path} with Indexer.
+
+15:33:32.373 instance_id=1A096ECAD8B [info] Resolved entity: {:module, Path}
+
+15:33:32.373 instance_id=1A096ECAD8B [info] No definition found for {:module, Path} with Indexer.
+
+15:33:32.419 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Path, :join, 2}
+
+15:33:32.419 instance_id=1A096ECAD8B [info] No definition found for {:call, Path, :join, 2} with Indexer.
+
+15:33:32.445 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_lib}
+
+15:33:32.446 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_lib}
+
+15:33:32.458 instance_id=1A096ECAD8B [info] Resolved entity: {:call, Path, :join, 2}
+
+15:33:32.458 instance_id=1A096ECAD8B [info] No definition found for {:call, Path, :join, 2} with Indexer.
+
+15:33:32.506 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_lib}
+
+15:33:32.714 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:33:33.247 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :lib}
+
+15:33:34.790 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_lib}
+
+15:33:36.086 instance_id=1A096ECAD8B [info] Building gleam_compiler
+
+15:33:36.816 instance_id=1A096ECAD8B [info] Compile completed with status ok Produced 0 diagnostics []
+
+15:33:36.816 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.011 ms
+
+15:33:36.945 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.009 ms
+
+15:35:09.658 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_lib}
+
+15:35:09.658 instance_id=1A096ECAD8B [info] Resolved entity: {:variable, :mix_lib}
+
+15:35:20.740 instance_id=1A096ECAD8B [info] Resolved entity: {:module, IO}
+
+15:35:23.664 instance_id=1A096ECAD8B [info] Building gleam_compiler
+
+15:35:23.742 instance_id=1A096ECAD8B [info] Compile completed with status ok Produced 0 diagnostics []
+
+15:35:23.743 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.016 ms
+
+15:35:23.779 instance_id=1A096ECAD8B [info] Plugins found 0 results in 0.053 ms

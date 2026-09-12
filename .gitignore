@@ -12,4 +12,7 @@ build/
 *.lock
 erl_crash.dump
 
+# expert
+.expert/
+
 local/

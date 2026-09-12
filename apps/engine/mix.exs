@@ -41,7 +41,7 @@ defmodule Engine.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
       # {:sibling_app_in_umbrella, in_umbrella: true},
       {:gleam_stdlib, "~> 0.34 or ~> 1.0"},
-      {:mix_gleam, "~> 0.6", only: [:dev, :test], runtime: false},
+      {:gleam_compiler, path: "../../tooling/gleam_compiler", runtime: false},
       {:gleeunit, "~> 1.0", only: [:dev, :test], runtime: false},
       {:compute, in_umbrella: true}
     ]
