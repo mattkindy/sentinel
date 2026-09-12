@@ -18,16 +18,20 @@ defmodule Sentinel.MixProject do
   end
 
   defp gleam_deps_get(_args) do
-    case System.cmd("mix", ["gleam.deps.get"],
-           cd: "apps/engine",
-           into: IO.stream(),
-           stderr_to_stdout: true
-         ) do
-      {_out, 0} ->
-        :ok
+    if System.find_executable("gleam") do
+      # Ensure the task provider is compiled before invoking its task
+      Mix.Task.run("deps.compile", ["mix_gleam"])
 
-      {_out, status} ->
-        Mix.raise("gleam.deps.get failed (exit #{status}). Is the gleam binary on PATH?")
+      case System.cmd("mix", ["gleam.deps.get"],
+             cd: "apps/engine",
+             into: IO.stream(),
+             stderr_to_stdout: true
+           ) do
+        {_out, 0} -> :ok
+        {_out, status} -> Mix.raise("gleam.deps.get failed (exit #{status})")
+      end
+    else
+      Mix.shell().info("gleam not on PATH; skipping gleam.deps.get")
     end
   end
 
