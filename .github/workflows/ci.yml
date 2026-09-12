@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  MIX_ENV: test
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: jdx/mise-action@v2
+        with:
+          install: true
+          cache: true
+
+      - name: Install mix_gleam archive
+        run: mix archive.install hex mix_gleam --force
+
+      - name: Cache deps and build
+        uses: actions/cache@v4
+        with:
+          path: |
+            deps
+            _build
+          key: mix-${{ runner.os }}-${{ hashFiles('mise.toml') }}-${{ hashFiles('mix.lock') }}
+          restore-keys: |
+            mix-${{ runner.os }}-${{ hashFiles('mise.toml') }}-
+
+      - name: Fetch dependencies
+        run: mix deps.get
+
+      - name: Compile (warnings as errors)
+        run: mix compile --warnings-as-errors
+
+      - name: Check Elixir formatting
+        run: mix format --check-formatted
+
+      - name: Check Gleam formatting
+        run: gleam format --check src test
+        working-directory: apps/engine
+
+      - name: Credo
+        run: mix credo
+
+      - name: Tests
+        run: mix test
+
+      - name: Dialyzer
+        run: mix dialyzer
